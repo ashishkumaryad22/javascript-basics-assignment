@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Create a list of fruits with their properties (name, color, pricePerKg)
+
+      // Write your code here
+
+      let fruitList = [];
+      let records = 2;
+      for (let j = 0; j < records; j++) {
+        // var name = window.prompt("Enter your name: ");
+        let fruitName = window.prompt(
+          `Enter ${j + 1} th Fruit Name out of ${records}`
+        );
+        let fruitColor = window.prompt(`Enter ${fruitName}'s Color`);
+        let fruitPrice = window.prompt(`Enter ${fruitName}'s Price`);
+
+        fruitList.push([`${fruitName}`, `${fruitColor}`, `${fruitPrice}`]);
+      }
+
+      // and convert it into a format so that for a given fruit name
+
+      let obj = [];
+      for (let i = 0; i < fruitList.length; i++) {
+        obj.push({
+          fName: `${fruitList[i][0]}`,
+          fColor: `${fruitList[i][1]}`,
+          fPricePerKg: `${fruitList[i][2]}`,
+        });
+      }
+
+      // retrieval of its color and pricePerKg value is fast
+      obj.forEach((e) => {
+        console.log(
+          `The Fruit's Name Is ${e.fName} , It's Color Is: ${e.fColor} and It's PricePerKg Is:${e.fPricePerKg}`
+        );
+      });
+      console.log(obj);
+    </script>
+  </body>
+</html>

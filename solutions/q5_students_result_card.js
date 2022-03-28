@@ -8,3 +8,22 @@
 
 
 // Write your code here
+// let obj = {};
+// for (i = 1; i <= 100; i++){
+//     // let obj.
+// }
+const stuList = require('./students.json');
+console.log(stuList);
+const scroeCard = (stuList) => {
+  stuList.forEach(e => {
+    let stuPercentage = ((e.allSubject[0].marks) + (e.allSubject[1].marks)) / e.allSubject.length;
+    console.log(`Name =${e.Name}, Subjets = ${e.allSubject[0].subject1} ,  ${e.allSubject[1].subject2}, TotalPercentages = ${stuPercentage}`);
+    // console.log({ 'Name': e.Name, 'Subjects': e.allSubject[0].subject1 + ', ' + e.allSubject[1].subject2, 'TotalPercentages': stuPercentage });
+  });
+}
+
+scroeCard(stuList)
+
+stuList.forEach((e) => {
+  <html> <script>{e.Name}</script></html>
+})

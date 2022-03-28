@@ -1,0 +1,28 @@
+[
+{
+  "Name": "Ajay",
+  "allSubject": [
+    {
+      "subject1": "Grammer",
+      "marks": 78
+    },
+    {
+      "subject2": "Account",
+      "marks": 68
+    }
+    ]
+},
+{
+    "Name": "Palak",
+  "allSubject": [
+    {
+      "subject1": "Grammer",
+      "marks": 75
+    },
+    {
+      "subject2": "Physics",
+      "marks": 72
+    }
+    ]
+}
+]
